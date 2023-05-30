@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* bright / dark mode */
+.pintura-editor {
+  --color-background: 255, 255, 255;
+  --color-foreground: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: #fff;
+    background: #000;
+  }
+
+  .pintura-editor {
+    --color-background: 0, 0, 0;
+    --color-foreground: 255, 255, 255;
+  }
+}
+
+/* size of the editor */
+.my-editor {
+  height: 95vh;
+}
+
